@@ -19,6 +19,12 @@ e-invoicing mandates (XRechnung, Peppol). Exact decimal arithmetic; 78
 validation rules cited by their specification identifiers; credit notes;
 serialise → parse round-trip proven by test. TypeScript, MIT.
 
+**[hookrelay](https://github.com/sriharifortitude/hookrelay)** — outbound webhook delivery service.
+Signed with Standard Webhooks (tested against the spec's vector), fixed and
+quotable retry schedule, dead-lettering and replay, idempotent publishing
+and idempotent delivery, circuit breaker, OpenAPI 3.1 generated from the
+route schemas. Fastify, Prisma, BullMQ, BSL 1.1.
+
 **[bailey](https://github.com/sriharifortitude/bailey)** — multi-tenant SaaS for continuous web security monitoring.
 Postgres row-level security as the isolation backstop, mutation-tested;
 Argon2id and opaque sessions; RBAC with invariant tests; domain-ownership
