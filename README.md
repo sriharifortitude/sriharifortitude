@@ -13,6 +13,14 @@ decision records — not tutorials.
 
 #### Selected work
 
+**[eventgrain](https://github.com/sriharifortitude/eventgrain)** — self-hosted product analytics on Postgres.
+Month-partitioned events with plain SQL migrations; count, unique, funnel
+and retention queries bucketed in the project's time zone; daily rollups
+the planner uses only when the answer is provably identical to raw, and
+every response says which it used; per-person erasure that invalidates
+aggregates; retention by partition drop; streamed CSV export. The
+integration fixture straddles a clock change. Hono, pg, BullMQ, BSL 1.1.
+
 **[openslot](https://github.com/sriharifortitude/openslot)** — appointment booking for a European practice.
 Slot engine computed in wall-clock time so DST transitions give the slots a
 receptionist would offer, pinned by tests on both transitions. WAI-ARIA grid
@@ -60,8 +68,9 @@ tests run against real HTTP. TypeScript, MIT.
 
 #### Stack
 
-TypeScript (strict), Node, React, Next.js, PostgreSQL, Prisma, Redis,
-Docker, GitHub Actions. Accessibility to WCAG 2.2 AA and i18n via `Intl`. Python for security tooling. Comfortable in Linux, TLS,
+TypeScript (strict), Node, React, Next.js, PostgreSQL (partitioning,
+window functions, plain SQL as readily as Prisma), Redis, Docker, GitHub
+Actions. Accessibility to WCAG 2.2 AA and i18n via `Intl`. Python for security tooling. Comfortable in Linux, TLS,
 HTTP, and the OWASP corpus.
 
 #### Contact
