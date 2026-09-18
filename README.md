@@ -13,6 +13,15 @@ decision records — not tutorials.
 
 #### Selected work
 
+**[openslot](https://github.com/sriharifortitude/openslot)** — appointment booking for a European practice.
+Slot engine computed in wall-clock time so DST transitions give the slots a
+receptionist would offer, pinned by tests on both transitions. WAI-ARIA grid
+calendar with a keyboard suite and axe-core checks; English, German and
+French through `Intl` with a typed message table; double booking prevented
+by a partial unique index and proven under concurrent requests. The
+accessibility statement lists what has not been verified as carefully as
+what has. React 19, Hono, Prisma, BSL 1.1.
+
 **[ubl-billing](https://github.com/sriharifortitude/ubl-billing)** — EN 16931 / Peppol BIS Billing 3.0 e-invoicing engine.
 Build, calculate, validate and parse the UBL documents behind the EU's B2B
 e-invoicing mandates (XRechnung, Peppol). Exact decimal arithmetic; 78
@@ -51,8 +60,8 @@ tests run against real HTTP. TypeScript, MIT.
 
 #### Stack
 
-TypeScript (strict), Node, Next.js, PostgreSQL, Prisma, Redis, Docker,
-GitHub Actions. Python for security tooling. Comfortable in Linux, TLS,
+TypeScript (strict), Node, React, Next.js, PostgreSQL, Prisma, Redis,
+Docker, GitHub Actions. Accessibility to WCAG 2.2 AA and i18n via `Intl`. Python for security tooling. Comfortable in Linux, TLS,
 HTTP, and the OWASP corpus.
 
 #### Contact
