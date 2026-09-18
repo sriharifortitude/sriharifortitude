@@ -49,6 +49,13 @@ verification; BullMQ scan pipeline with regression detection; GDPR export,
 erasure and retention. Every form works without JavaScript. Next.js 15,
 Prisma, BSL 1.1.
 
+**[tablewarden](https://github.com/sriharifortitude/tablewarden)** — data-quality checks as a CI gate.
+Eight kinds of check declared in TOML, each compiled to one SQL statement
+against Postgres, SQLite or CSV (loaded into SQLite); failing rows sampled
+into terminal, JSON or JUnit reports; read-only sessions; exit codes that
+distinguish "found problems" from "could not look". Python 3.12, mypy
+strict, zero runtime dependencies, MIT.
+
 **[parapet-scan](https://github.com/sriharifortitude/parapet-scan)** — web security posture audit engine.
 Nineteen checks across headers, TLS, cookies, CORS, disclosure and content
 integrity. Evidence collected once and shared, so a full scan is ~16
@@ -70,7 +77,7 @@ tests run against real HTTP. TypeScript, MIT.
 
 TypeScript (strict), Node, React, Next.js, PostgreSQL (partitioning,
 window functions, plain SQL as readily as Prisma), Redis, Docker, GitHub
-Actions. Accessibility to WCAG 2.2 AA and i18n via `Intl`. Python for security tooling. Comfortable in Linux, TLS,
+Actions. Accessibility to WCAG 2.2 AA and i18n via `Intl`. Python (3.12, typed, ruff/mypy strict) for data and security tooling. Comfortable in Linux, TLS,
 HTTP, and the OWASP corpus.
 
 #### Contact
