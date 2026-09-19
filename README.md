@@ -12,8 +12,8 @@ below is working software with tests, CI and decision records, and four
 of the repositories run together as one deployed stack.
 
 **Start here:** [grainops](https://github.com/sriharifortitude/grainops)
-— `docker compose up` for the analytics stack, with a smoke test in CI
-that proves it end to end.
+— the analytics stack as `docker compose up` or `helm install`, each
+proven end to end in CI.
 
 ---
 
@@ -21,7 +21,7 @@ that proves it end to end.
 
 | | |
 | --- | --- |
-| [grainops](https://github.com/sriharifortitude/grainops) | Compose deployment from pinned tags: Postgres, Redis, Prometheus, Grafana, backups, runbook. The CI smoke test found two configuration bugs before a user could. |
+| [grainops](https://github.com/sriharifortitude/grainops) | Deployment two ways — Compose for one host, a Helm chart for Kubernetes — from pinned, published images: rootless containers, migrations before readiness, default-deny NetworkPolicy, Prometheus/Grafana, backups, runbook. Both paths proven end to end in CI (the Helm path on kind), which found three configuration bugs before a user could. |
 | [eventgrain](https://github.com/sriharifortitude/eventgrain) | Self-hosted product analytics. Month-partitioned events in plain SQL; count, unique, funnel and retention in the project's time zone; rollups used only when provably identical to raw; GDPR erasure; retention by partition drop. TypeScript, BSL 1.1. |
 | [grainview](https://github.com/sriharifortitude/grainview) | Its dashboard. Hand-written SVG charts that screen readers can read: a named image with a generated description, and the numbers in a table. React 19, no chart library, BSL 1.1. |
 | [gatelimit](https://github.com/sriharifortitude/gatelimit) | Rate-limiting reverse proxy. Token bucket and sliding window, in-process or Redis with Lua scripts; 100 concurrent requests across two instances admit exactly 50, under the race detector. Go, MIT. |
@@ -56,7 +56,8 @@ that proves it end to end.
 
 TypeScript (strict), Node, React, Next.js · Go · Python 3.12 (typed,
 ruff/mypy strict) · PostgreSQL (partitioning, window functions, plain SQL
-as readily as an ORM), Redis · Docker, GitHub Actions, Prometheus/Grafana
+as readily as an ORM), Redis · Docker, Kubernetes/Helm, GitHub Actions,
+Prometheus/Grafana
 · WCAG 2.2 AA and `Intl`-based i18n · Linux, TLS, HTTP, the OWASP corpus.
 
 #### Contact
