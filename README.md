@@ -13,6 +13,13 @@ decision records — not tutorials.
 
 #### Selected work
 
+**[grainview](https://github.com/sriharifortitude/grainview)** — the dashboard for eventgrain.
+Series, funnel and retention views with hand-written SVG charts: each
+chart is a named image with a generated one-sentence description and a
+data table behind a disclosure; funnels and retention grids are real
+tables. Colour never the only channel; axe-clean; saved views; CSV.
+React 19, no chart library, BSL 1.1.
+
 **[eventgrain](https://github.com/sriharifortitude/eventgrain)** — self-hosted product analytics on Postgres.
 Month-partitioned events with plain SQL migrations; count, unique, funnel
 and retention queries bucketed in the project's time zone; daily rollups
