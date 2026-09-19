@@ -89,7 +89,7 @@ tests run against real HTTP. TypeScript, MIT.
 
 #### Stack
 
-TypeScript (strict), Node, React, Next.js, PostgreSQL (partitioning,
+TypeScript (strict), Node, React, Next.js, Go, PostgreSQL (partitioning,
 window functions, plain SQL as readily as Prisma), Redis, Docker, GitHub
 Actions. Accessibility to WCAG 2.2 AA and i18n via `Intl`. Python (3.12, typed, ruff/mypy strict) for data and security tooling. Comfortable in Linux, TLS,
 HTTP, and the OWASP corpus.
