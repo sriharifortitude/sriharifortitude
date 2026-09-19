@@ -13,6 +13,13 @@ decision records — not tutorials.
 
 #### Selected work
 
+**[gatelimit](https://github.com/sriharifortitude/gatelimit)** — rate-limiting reverse proxy in Go.
+Token bucket and sliding window over an in-process store or Redis, where
+Lua scripts make decisions atomic across instances (100 concurrent
+requests through two clients: exactly 50 pass, under the race detector).
+IETF `RateLimit-*` headers, fail-open with a per-instance fallback or
+fail-closed, trusted-proxy handling, Prometheus metrics. Go 1.27, MIT.
+
 **[grainview](https://github.com/sriharifortitude/grainview)** — the dashboard for eventgrain.
 Series, funnel and retention views with hand-written SVG charts: each
 chart is a named image with a generated one-sentence description and a
