@@ -6,12 +6,22 @@ clients in Europe.
 
 I build the parts of a system that are expensive to get wrong: tenant
 isolation, authentication, money arithmetic, compliance with a published
-standard. The repositories below are working software with tests, CI and
-decision records — not tutorials.
+standard, time-zone arithmetic, rate limiting under concurrency. The
+repositories below are working software with tests, CI and decision
+records — not tutorials — and four of them run together as one deployed
+stack.
 
 ---
 
 #### Selected work
+
+**[grainops](https://github.com/sriharifortitude/grainops)** — the four repositories below it, deployed as one stack.
+`docker compose up` builds eventgrain, grainview, gatelimit and
+tablewarden from pinned tags with Postgres, Redis, Prometheus and a
+provisioned Grafana dashboard; secrets in `.env` only, one public port,
+migrations as a job the API depends on, backups, a runbook. A smoke test
+in CI ingests through the public port, waits for rollups, proves the
+rate limit under a 400-request burst, and runs the data-quality gate.
 
 **[gatelimit](https://github.com/sriharifortitude/gatelimit)** — rate-limiting reverse proxy in Go.
 Token bucket and sliding window over an in-process store or Redis, where
