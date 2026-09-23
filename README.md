@@ -35,6 +35,7 @@ proven end to end in CI.
 | [bailey](https://github.com/sriharifortitude/bailey) | Multi-tenant SaaS for continuous web security monitoring. Postgres row-level security as the isolation backstop, mutation-tested; Argon2id and opaque sessions; RBAC with invariant tests; GDPR export, erasure, retention; every form works without JavaScript. Next.js 15, BSL 1.1. |
 
 | [camtmatch](https://github.com/sriharifortitude/camtmatch) | Bank-statement reconciliation for accounts receivable. ISO 20022 camt.053 in (all versions in circulation, DTDs refused); payments matched to open invoices by ISO 11649 reference, invoice numbers in the remittance text, then payer IBAN — and every match explains itself in sentences. Amount alone never matches; a statement that doesn't balance applies nothing. Java 21, Spring Boot 4, Postgres, Testcontainers, BSL 1.1. |
+| [dsarclock](https://github.com/sriharifortitude/dsarclock) | GDPR data subject request register. Deadlines counted the way EU law counts a month (Regulation 1182/71: short months, weekends, the controller's national holidays with Easter computed); Art. 12 rules enforced — an extension must come within the first month, a refusal is late after the original month even when extended; an audit trail the database itself refuses to edit. .NET 10, EF Core, Postgres, BSL 1.1. |
 
 #### Libraries and tools
 
@@ -56,7 +57,7 @@ proven end to end in CI.
 
 #### Stack
 
-TypeScript (strict), Node, React, Next.js · Java 21, Spring Boot · Go · Python 3.12 (typed,
+TypeScript (strict), Node, React, Next.js · Java 21, Spring Boot · C#, .NET 10, EF Core · Go · Python 3.12 (typed,
 ruff/mypy strict) · PostgreSQL (partitioning, window functions, plain SQL
 as readily as an ORM), Redis · Docker, Kubernetes/Helm, GitHub Actions,
 Prometheus/Grafana
