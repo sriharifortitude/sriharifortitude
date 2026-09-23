@@ -34,6 +34,8 @@ proven end to end in CI.
 | [openslot](https://github.com/sriharifortitude/openslot) | Appointment booking for a European practice. DST-correct slot engine pinned by tests on both transitions; WAI-ARIA calendar with a keyboard suite; English, German, French via `Intl`; double booking prevented by a unique index and proven under concurrent requests. Its accessibility statement lists what was *not* verified. React 19, Hono, BSL 1.1. |
 | [bailey](https://github.com/sriharifortitude/bailey) | Multi-tenant SaaS for continuous web security monitoring. Postgres row-level security as the isolation backstop, mutation-tested; Argon2id and opaque sessions; RBAC with invariant tests; GDPR export, erasure, retention; every form works without JavaScript. Next.js 15, BSL 1.1. |
 
+| [camtmatch](https://github.com/sriharifortitude/camtmatch) | Bank-statement reconciliation for accounts receivable. ISO 20022 camt.053 in (all versions in circulation, DTDs refused); payments matched to open invoices by ISO 11649 reference, invoice numbers in the remittance text, then payer IBAN — and every match explains itself in sentences. Amount alone never matches; a statement that doesn't balance applies nothing. Java 21, Spring Boot 4, Postgres, Testcontainers, BSL 1.1. |
+
 #### Libraries and tools
 
 | | |
@@ -54,7 +56,7 @@ proven end to end in CI.
 
 #### Stack
 
-TypeScript (strict), Node, React, Next.js · Go · Python 3.12 (typed,
+TypeScript (strict), Node, React, Next.js · Java 21, Spring Boot · Go · Python 3.12 (typed,
 ruff/mypy strict) · PostgreSQL (partitioning, window functions, plain SQL
 as readily as an ORM), Redis · Docker, Kubernetes/Helm, GitHub Actions,
 Prometheus/Grafana
