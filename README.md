@@ -45,6 +45,7 @@ proven end to end in CI.
 | [hookrelay](https://github.com/sriharifortitude/hookrelay) | Outbound webhook delivery. Standard Webhooks signing tested against the spec's vector, quotable retry schedule, dead-lettering and replay, idempotent publish and delivery, circuit breaker, OpenAPI from the route schemas. Fastify, BullMQ, BSL 1.1. |
 | [parapet-scan](https://github.com/sriharifortitude/parapet-scan) | Web security posture audit: nineteen checks over headers, TLS, cookies, CORS and disclosure from ~16 requests per scan; terminal, JSON, SARIF and HTML output; ships a deliberately misconfigured lab so the integration tests hit real HTTP. TypeScript, MIT. |
 | [tfwarden](https://github.com/sriharifortitude/tfwarden) | Terraform plan scanner: ten AWS checks — public buckets, security groups open to the internet, unencrypted storage, wildcard IAM — read from `terraform show -json` rather than re-implemented HCL evaluation. An attribute Terraform can't resolve yet is reported `indeterminate`, never guessed pass or fail. Go, MIT. |
+| [credsweep](https://github.com/sriharifortitude/credsweep) | Secrets scanner for a git repository's full commit history, not just the working tree: finds a credential committed and later removed, at the exact commit that introduced it. Redacted output and a one-way fingerprint for allowlisting — the raw value never leaves the scan loop as itself. Go, MIT. |
 
 ---
 
