@@ -44,6 +44,7 @@ proven end to end in CI.
 | [ubl-billing](https://github.com/sriharifortitude/ubl-billing) | EN 16931 / Peppol BIS Billing 3.0 e-invoicing engine. Exact decimal arithmetic, 78 validation rules cited by their specification identifiers, credit notes, serialise → parse round-trip proven by test. TypeScript, MIT. |
 | [hookrelay](https://github.com/sriharifortitude/hookrelay) | Outbound webhook delivery. Standard Webhooks signing tested against the spec's vector, quotable retry schedule, dead-lettering and replay, idempotent publish and delivery, circuit breaker, OpenAPI from the route schemas. Fastify, BullMQ, BSL 1.1. |
 | [parapet-scan](https://github.com/sriharifortitude/parapet-scan) | Web security posture audit: nineteen checks over headers, TLS, cookies, CORS and disclosure from ~16 requests per scan; terminal, JSON, SARIF and HTML output; ships a deliberately misconfigured lab so the integration tests hit real HTTP. TypeScript, MIT. |
+| [tfwarden](https://github.com/sriharifortitude/tfwarden) | Terraform plan scanner: ten AWS checks — public buckets, security groups open to the internet, unencrypted storage, wildcard IAM — read from `terraform show -json` rather than re-implemented HCL evaluation. An attribute Terraform can't resolve yet is reported `indeterminate`, never guessed pass or fail. Go, MIT. |
 
 ---
 
