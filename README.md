@@ -48,6 +48,7 @@ proven end to end in CI.
 | [tfwarden](https://github.com/sriharifortitude/tfwarden) | Terraform plan scanner: ten AWS checks — public buckets, security groups open to the internet, unencrypted storage, wildcard IAM — read from `terraform show -json` rather than re-implemented HCL evaluation. An attribute Terraform can't resolve yet is reported `indeterminate`, never guessed pass or fail. Go, MIT. |
 | [credsweep](https://github.com/sriharifortitude/credsweep) | Secrets scanner for a git repository's full commit history, not just the working tree: finds a credential committed and later removed, at the exact commit that introduced it. Redacted output and a one-way fingerprint for allowlisting — the raw value never leaves the scan loop as itself. Go, MIT. |
 | [kubeshield](https://github.com/sriharifortitude/kubeshield) | Kubernetes manifest security scanner: ten checks — privileged containers, host namespace sharing, hostPath volumes, wildcard RBAC, unpinned images, missing resource limits — over plain YAML or `helm template` output, no live cluster needed. Go, MIT. |
+| [vulnlock](https://github.com/sriharifortitude/vulnlock) | Known-vulnerability scanner for npm, Go and Python lockfiles, against the real OSV.dev database. Real CVSS v3.1 base-score calculation implemented from the spec, not a dependency; severity prefers a curated rating and never fabricates one. Python, MIT. |
 
 ---
 
