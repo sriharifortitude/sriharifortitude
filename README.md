@@ -50,6 +50,7 @@ proven end to end in CI.
 | [kubeshield](https://github.com/sriharifortitude/kubeshield) | Kubernetes manifest security scanner: ten checks — privileged containers, host namespace sharing, hostPath volumes, wildcard RBAC, unpinned images, missing resource limits — over plain YAML or `helm template` output, no live cluster needed. Go, MIT. |
 | [vulnlock](https://github.com/sriharifortitude/vulnlock) | Known-vulnerability scanner for npm, Go and Python lockfiles, against the real OSV.dev database. Real CVSS v3.1 base-score calculation implemented from the spec, not a dependency; severity prefers a curated rating and never fabricates one. Python, MIT. |
 | [apilint](https://github.com/sriharifortitude/apilint) | Static OpenAPI 3.x security linter: ten OWASP API Security Top 10 checks — missing authorization on a per-resource endpoint (BOLA/IDOR-shaped), mass assignment, sensitive fields in a response, weak auth schemes — with no live server needed. Distinguishes "no security declared" from an endpoint that says so on purpose. Go, MIT. |
+| [outboxer](https://github.com/sriharifortitude/outboxer) | Transactional outbox for Postgres. `publish()` writes to the caller's own transaction, so an event and the business write it describes live or die together by construction; a relay delivers per aggregate in order via a non-blocking advisory lock, proven under two concurrent workers racing the same aggregate. TypeScript, MIT. |
 
 ---
 
