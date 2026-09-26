@@ -49,6 +49,7 @@ proven end to end in CI.
 | [credsweep](https://github.com/sriharifortitude/credsweep) | Secrets scanner for a git repository's full commit history, not just the working tree: finds a credential committed and later removed, at the exact commit that introduced it. Redacted output and a one-way fingerprint for allowlisting — the raw value never leaves the scan loop as itself. Go, MIT. |
 | [kubeshield](https://github.com/sriharifortitude/kubeshield) | Kubernetes manifest security scanner: ten checks — privileged containers, host namespace sharing, hostPath volumes, wildcard RBAC, unpinned images, missing resource limits — over plain YAML or `helm template` output, no live cluster needed. Go, MIT. |
 | [vulnlock](https://github.com/sriharifortitude/vulnlock) | Known-vulnerability scanner for npm, Go and Python lockfiles, against the real OSV.dev database. Real CVSS v3.1 base-score calculation implemented from the spec, not a dependency; severity prefers a curated rating and never fabricates one. Python, MIT. |
+| [apilint](https://github.com/sriharifortitude/apilint) | Static OpenAPI 3.x security linter: ten OWASP API Security Top 10 checks — missing authorization on a per-resource endpoint (BOLA/IDOR-shaped), mass assignment, sensitive fields in a response, weak auth schemes — with no live server needed. Distinguishes "no security declared" from an endpoint that says so on purpose. Go, MIT. |
 
 ---
 
