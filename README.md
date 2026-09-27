@@ -69,7 +69,3 @@ ruff/mypy strict) · PostgreSQL (partitioning, window functions, plain SQL
 as readily as an ORM), Redis · Docker, Kubernetes/Helm, GitHub Actions,
 Prometheus/Grafana
 · WCAG 2.2 AA and `Intl`-based i18n · Linux, TLS, HTTP, the OWASP corpus.
-
-#### Contact
-
-hacktivatecybersolutions@gmail.com
