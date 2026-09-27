@@ -51,6 +51,7 @@ proven end to end in CI.
 | [vulnlock](https://github.com/sriharifortitude/vulnlock) | Known-vulnerability scanner for npm, Go and Python lockfiles, against the real OSV.dev database. Real CVSS v3.1 base-score calculation implemented from the spec, not a dependency; severity prefers a curated rating and never fabricates one. Python, MIT. |
 | [apilint](https://github.com/sriharifortitude/apilint) | Static OpenAPI 3.x security linter: ten OWASP API Security Top 10 checks — missing authorization on a per-resource endpoint (BOLA/IDOR-shaped), mass assignment, sensitive fields in a response, weak auth schemes — with no live server needed. Distinguishes "no security declared" from an endpoint that says so on purpose. Go, MIT. |
 | [outboxer](https://github.com/sriharifortitude/outboxer) | Transactional outbox for Postgres. `publish()` writes to the caller's own transaction, so an event and the business write it describes live or die together by construction; a relay delivers per aggregate in order via a non-blocking advisory lock, proven under two concurrent workers racing the same aggregate. TypeScript, MIT. |
+| [bomdelta](https://github.com/sriharifortitude/bomdelta) | Diffs two CycloneDX SBOMs for release review: downgrades, older duplicate copies, licences that became more restrictive. On real npm output it catches an express downgrade that has no advisory of its own but brings back three fixed CVEs in transitive packages, and TinyMCE's MIT to GPL relicensing inside a routine major bump. Its first CI run found a false positive in credsweep, fixed there. Rust, MIT. |
 
 ---
 
@@ -64,7 +65,7 @@ proven end to end in CI.
 
 #### Stack
 
-TypeScript (strict), Node, React, Next.js · Java 21, Spring Boot · C#, .NET 10, EF Core · Go · Python 3.12 (typed,
+TypeScript (strict), Node, React, Next.js · Java 21, Spring Boot · C#, .NET 10, EF Core · Go · Rust · Python 3.12 (typed,
 ruff/mypy strict) · PostgreSQL (partitioning, window functions, plain SQL
 as readily as an ORM), Redis · Docker, Kubernetes/Helm, GitHub Actions,
 Prometheus/Grafana
